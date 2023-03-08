@@ -1,0 +1,124 @@
+/* 
+    #D0604C
+    #F4E7B2
+    #BB8369
+*/
+
+body {
+  background-color: #edefee;
+  font-family: 'Markazi Text', serif;
+  margin: 3rem 5%;
+  color: #edefee;
+}
+
+h1 {
+  font-size: 4rem;
+  font-family: 'Noto Serif Display', serif;
+}
+#sub-heading {
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 2rem;
+}
+
+header > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+  background-color: #f4e7b2;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #bb8369;
+  font-size: 1.2rem;
+  padding: 2px 8px;
+}
+nav a:hover {
+  background-color: #edefee;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+#top {
+  background-image: url(../Image.jpg);
+  background-color: rgb(109, 107, 107);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: overlay;
+  padding: 1rem 3rem;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+#text-area {
+  width: 50%;
+}
+
+#below > article {
+  background-color: #bb8369;
+  padding: 20px;
+  border-radius: 10px;
+  width: 30%;
+  margin-bottom: 10px;
+}
+
+#below img {
+  width: 100%;
+}
+
+article {
+  flex: 1;
+}
+
+button{
+    border: 0;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: 500;
+    box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.192)
+}
+
+button:hover{
+    background-color: #d0604c;
+    color: #edefee;
+}
+
+footer {
+  display: flex;
+  color: #d0604c;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: lightgray;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer div {
+  flex: 1;
+}
+
+footer img {
+  width: 200px;
+}
