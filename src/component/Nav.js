@@ -1,14 +1,24 @@
-
+import React from 'react';
+import './styles/style.css';
+import { Outlet, Link } from 'react-router-dom';
 
 const Nav = () => {
     return (
+      <>
+      <nav>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Reservations</a></li>
-            <li><a href="#">Order Online</a></li>
-            <li><a href="#">Login</a></li>
+          <li className="horinav black"><Link to="/">Home </Link></li>
+          <li className="horinav black"><Link to="/">About </Link></li>
+          <li className="horinav black"><Link to="/">Menu </Link></li>
+          <li className="horinav black"><Link to="/booking">Reservations </Link></li>
+          <li className="horinav black"><Link to="/">Order Online </Link></li>
+          <li className="horinav black"><Link to="/">Login </Link></li>
         </ul>
-    );
-};
+      </nav>
+
+      <Outlet />
+      </>
+    )
+  }
+
+  export default Nav

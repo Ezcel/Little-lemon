@@ -1,38 +1,40 @@
+import './App.css';
+import './components/styles/style.css';
+import Nav from './components/Nav.js';
+import Header from './components/Header.js';
+import Main from './components/Main.js';
+import Footer from './components/Footer.js';
+import Booking from './components/Booking.js';
+import ConfirmedBooking from './components/ConfirmedBooking.js';
+import { Routes, Route } from 'react-router-dom';
 
-import { Link, Route, Routes } from "react-router-dom";
-
-function App(){
-  return(
-    <div className="App">
-      <header>
-        <Header />
-      </header>
-
-      <nav className="nav">
-        <Nav />
-        <Link to="/" className="nav-item">Homepage</Link>
-        <Link to="/about-me" className="nav-item">About Me</Link>
-        <Link to="/contact" className="nav-item">Contact Us</Link>
-      </nav>
-      <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="/about-me" element={<AboutMe />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-      <CurrentMessage />
-      <video src={video} width={375} height={250}
-        controls />
-      
-      <main>
-        <Main />
-      </main>
-
-      <footer>
-        <Footer />
-      </footer>
-      
-    </div>
+function App() {
+  return (
+    <>
+      <div className="flex-container">
+        <div className="headerbox">
+          <div className="header-container">
+            <div className="logobox">
+              <Header />
+            </div>
+            <div className="navbox">
+              <Nav />
+            </div>
+          </div>
+        </div>
+        <div className="mainbox">
+        <Routes>
+            <Route path="/" element={<Main />} />
+            <Route path="/booking" element={<Booking />} />
+            <Route path="/confirmed" element={<ConfirmedBooking />} />
+          </Routes>
+        </div>
+        <div className="footerbox">
+          <Footer />
+        </div>
+      </div>
+    </>
   );
-};
+}
 
 export default App;

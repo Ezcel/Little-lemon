@@ -1,12 +1,13 @@
-import logo from "../assets/mainLogo.png"
+import React from 'react';
+import Logo from "./icons_assets/logo.jpg";
+import "./styles/style.css";
 
 const Header = () => {
     return (
-        <div>
-            <img src={logo} alt="Logo" />
-        </div>
-        
-    );
-}
+      <header>
+        <img src = { Logo } alt = "Little Lemon logo" className="logo"/>
+      </header>
+    )
+  }
 
-export default Header;
+  export default Header
